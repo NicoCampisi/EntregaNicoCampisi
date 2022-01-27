@@ -4,10 +4,12 @@
 }
 
 /*HEADER*/
+header{
+    border-bottom: 2px solid rgb(7, 192, 192);
+}
 .logo {
     margin-top: 50px;
     text-align: center;
-    
 }
 
 .menu {
@@ -17,6 +19,7 @@
 
 .menuNavegador {
     font-size: 30px;
+    text-decoration: none;
     border-right: 2px solid rgb(7, 192, 192);
     padding: 10px 45px 10px 45px;
     display: inline-block;
@@ -24,6 +27,10 @@
 
 .menuNavegador1 {
     border-right: none;
+}
+.navColor{
+    text-decoration: none;
+    color: black;
 }
 
 /*INDEX*/
@@ -106,12 +113,12 @@ main{
 /*NOSOTROS*/
 .descripcion{
     background-color:rgba(37, 201, 212, 0.342);
-    font-size: 40px;
-    width: 60%;
-    font-style: tahoma;
+    font-size: 25px;
+    width: 70%;
+    font-style: italic; 
     text-align: center;
-    margin: 150px auto;
-    border: 1px solid black;
+    margin: 100px auto;
+    border: 1px solid rgb(7, 192, 192);
     box-shadow: 10px 10px 15px black;
     border-radius: 10px;
     padding: 15px;
