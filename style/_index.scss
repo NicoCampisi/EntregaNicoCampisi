@@ -1,0 +1,57 @@
+.padre {
+    display: grid;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+    main {
+        grid-area: main;
+        width: 100%;
+        
+        
+        .car-index {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .text {
+            display: flex;
+            width: 80%;
+            border: 2px solid rgb(150, 192, 183);
+            border-radius: 20px;
+            margin: 70px auto;
+            padding: 15px;
+            background-color: rgb(150, 192, 183);
+            box-shadow: 10px 10px 20px black;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        /*CARDS*/
+        .card{
+            padding: 0%;
+        }
+    }
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 426px) {
+    .padre {
+        display: grid;
+        grid-template-rows: auto 3fr auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    
+        main {
+            .text {
+                font-size: 20px;  
+            }
+        }
+    }
+}

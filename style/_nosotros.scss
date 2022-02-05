@@ -1,0 +1,31 @@
+.padreNosotros{
+    background-color: rgb(255, 219, 218);
+    
+    .mainNosotros{
+        h2{
+            display: flex;
+            justify-content: center;
+            margin: 80px auto 20px auto;
+            padding: 15px;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .descripcion {
+            font-size: 30px;
+            width: 80%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 50px auto;
+            padding: 15px;
+        }
+    
+    }
+
+    .imagenScroll{
+        background-image: url(../imagenes/localUnasRedimensionada1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 600px;
+    }
+}

@@ -1,0 +1,29 @@
+.servicioFotos {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 1px;
+    column-gap: 1px;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 15px;
+    border: 10px solid rgb(7, 192, 192);
+    background-color: rgb(7, 192, 192);
+    width: 70%;
+    .foto2 {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .foto2:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+    }
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 506px) {
+
+    
+}
