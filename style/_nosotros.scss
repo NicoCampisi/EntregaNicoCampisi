@@ -1,19 +1,24 @@
+
+@mixin flex( $dis, $just, $aling) {
+    display: $dis;
+    justify-content: $just;
+    align-items: $aling;
+}
 .padreNosotros{
-    background-color: rgb(255, 219, 218);
+    background-color: $color;
     
     .mainNosotros{
         h2{
-            display: flex;
-            justify-content: center;
+            @include flex( flex, center, center);
             margin: 80px auto 20px auto;
             padding: 15px;
             font-size: 30px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: $fontFamily;
         }
         .descripcion {
             font-size: 30px;
             width: 80%;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: $fontFamily;
             text-align: center;
             margin: 50px auto;
             padding: 15px;

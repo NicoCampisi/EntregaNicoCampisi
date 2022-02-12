@@ -1,11 +1,14 @@
+
 *{
     padding: 0;
     margin: 0;
 }
+
 .header {
     grid-area: header;
     margin: 0px;
-    background-color: rgb(255, 219, 218);
+    background-color: $color;
+    font-family: $fontFamily;
     
     .logo{
         border-radius: 100%;
@@ -23,7 +26,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
-    margin-top: 0;
+    margin-top: 0px;
     height: 150px;
     background-color: black;
     grid-area: footer;
@@ -46,14 +49,12 @@ footer {
             "header"
             "main"
             "footer";
-        .navbar{
+        .navbar {
             display: flex;
             justify-content: center;
         }
         .text{
                 font-size: 10px;
         }
-    }
-            
-        
+    }              
 }

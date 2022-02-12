@@ -1,3 +1,5 @@
+
+
 .padre {
     display: grid;
     grid-template-rows: auto 3fr auto;
@@ -20,11 +22,11 @@
         .text {
             display: flex;
             width: 80%;
+            background-color: rgb(150, 192, 183);
             border: 2px solid rgb(150, 192, 183);
             border-radius: 20px;
             margin: 70px auto;
             padding: 15px;
-            background-color: rgb(150, 192, 183);
             box-shadow: 10px 10px 20px black;
             font-size: 30px;
             font-family: 'Times New Roman', Times, serif;
