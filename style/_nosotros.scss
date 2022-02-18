@@ -1,20 +1,21 @@
-
-@mixin flex( $dis, $just, $aling) {
+@mixin flex($dis, $just, $aling) {
     display: $dis;
     justify-content: $just;
     align-items: $aling;
 }
-.padreNosotros{
+
+.padreNosotros {
     background-color: $color;
-    
-    .mainNosotros{
-        h2{
-            @include flex( flex, center, center);
+
+    .mainNosotros {
+        h2 {
+            @include flex(flex, center, center);
             margin: 80px auto 20px auto;
             padding: 15px;
             font-size: 30px;
             font-family: $fontFamily;
         }
+
         .descripcion {
             font-size: 30px;
             width: 80%;
@@ -23,14 +24,68 @@
             margin: 50px auto;
             padding: 15px;
         }
-    
+
     }
 
-    .imagenScroll{
+    .imagenScroll {
         background-image: url(../imagenes/localUnasRedimensionada1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         height: 600px;
+    }
+}
+
+@media (max-width:768px) {
+    .padreNosotros {
+
+        .mainNosotros {
+            h2 {
+                margin: 20px auto;
+                font-size: 24px;
+            }
+
+            .descripcion {
+                font-size: 22px;
+                margin-top: 0px;
+            }
+        }
+
+        .imagenScroll {
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .padreNosotros {
+        
+        .mainNosotros {
+            h2 {
+                font-size: 13px;
+                margin-bottom: 0px;
+            }
+
+            .descripcion {
+                font-size: 12px;
+                margin-top: 0px;
+            }
+        }
+
+        .imagenScroll {
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .padreNosotros {
+
+        .mainNosotros {
+            h2 {
+                font-size: 11px;
+                margin-bottom: 0px;
+            }
+        }
     }
 }

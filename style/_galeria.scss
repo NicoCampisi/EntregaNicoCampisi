@@ -1,110 +1,56 @@
-
 .mainGalery {
-    h2 {
+    h1 {
         display: flex;
         justify-content: center;
         margin-top: 40px;
         font-family: $fontFamily;
     }
 
-    .imgGalery {
+    .gallery-container {
         display: grid;
-        width: 80%;
-        height: 80%;
-        margin: 40px auto;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas:
-            "foto1 foto2 foto3 foto4"
-            "foto5 foto6 foto7 foto8"
-            "foto9 foto10 foto11 foto12"
-            "foto13 foto14 foto15 foto16";
-        row-gap: 15px;
+        grid-auto-rows: auto;
+        padding: 20px;
+        grid-gap: 10px;
+        margin: auto;
+        width: 80%;
 
-        div {
-            display: flex;
-            justify-content: center;
-        }
-
-        .foto1 {
-            grid-area: foto1;
-            border-radius: 15px;
-        }
-
-        .foto2 {
-            grid-area: foto2;
-            border-radius: 15px;
-        }
-
-        .foto3 {
-            grid-area: foto3;
+        .gallery__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 15px;
 
+            &:hover {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.2);
+                transition-duration: 0.5s;
+            }
+        }
+    }
+
+    @media (max-width:1024px) {
+        .gallery-container {
+            grid-template-columns: repeat(3, 1fr);
+            margin: 20px auto;
         }
 
-        .foto4 {
-            grid-area: foto4;
-            border-radius: 15px;
+    }
+
+    @media (max-width:768px) {
+        .gallery-container {
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            margin: auto;
         }
 
-        .foto5 {
-            grid-area: foto5;
-            border-radius: 15px;
-        }
+    }
 
-        .foto6 {
-            grid-area: foto6;
-            border-radius: 15px;
-        }
-
-        .foto7 {
-            grid-area: foto7;
-            border-radius: 15px;
-        }
-
-        .foto8 {
-            grid-area: foto8;
-            border-radius: 15px;
-        }
-
-        .foto9 {
-            grid-area: foto9;
-            border-radius: 15px;
-        }
-
-        .foto10 {
-            grid-area: foto10;
-            border-radius: 15px;
-        }
-
-        .foto11 {
-            grid-area: foto11;
-            border-radius: 15px;
-        }
-
-        .foto12 {
-            grid-area: foto12;
-            border-radius: 15px;
-        }
-
-        .foto13 {
-            grid-area: foto13;
-            border-radius: 15px;
-        }
-
-        .foto14 {
-            grid-area: foto14;
-            border-radius: 15px;
-        }
-
-        .foto15 {
-            grid-area: foto15;
-            border-radius: 15px;
-        }
-
-        .foto16 {
-            grid-area: foto16;
-            border-radius: 15px;
+    @media (max-width:425px) {
+        .gallery-container {
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+            margin: auto;
         }
 
     }

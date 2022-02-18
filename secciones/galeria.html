@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Esta pagina va a mostrar fotos de Uñas">
   <meta name="keywords"
-  content="uñas, capping, manicura, pedicura, esmaltes, esmaltado, nails, nail art, uñas esculpidas, acrygel, nail artist, nail designer, esculpidas, curso de uñas, curso de manicura, belleza de manos, belleza de piez">
+    content="uñas, capping, manicura, pedicura, esmaltes, esmaltado, nails, nail art, uñas esculpidas, acrygel, nail artist, nail designer, esculpidas, curso de uñas, curso de manicura, belleza de manos, belleza de piez">
   <link rel="shortcut icon" href="../imagenes/newLog.jpg" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -16,12 +16,12 @@
 
 </head>
 
-<body>
-  <header class="header">
+<body class="padre">
+  <header class="header padre">
     <nav class="navbar navbar-expand-lg ">
-      <div>
+      <div><a href="/index.html">
         <img class="logo" src="../imagenes/newLog.jpg" alt="tinaNails">
-      </div>
+      </a></div>
       <div class="container-fluid">
         <button class="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,32 +50,51 @@
     </nav>
   </header>
   <main class="mainGalery">
-      <h2 class="Title">ALGUNOS DE NUESTROS TRABAJOS</h2>
-
-      <section class="imgGalery">
-      <div><img class="foto1" src="../imagenes/fotosUnas/azules.jpeg" alt="" width="200px" height="250px"></div>
-      <div><img class="foto2" src="../imagenes/fotosUnas/caricaturas.jpeg" alt=""  width="200px" height="250px"></div>
-      <div><img class="foto3" src="../imagenes/fotosUnas/celestes.jpeg" alt=""  width="200px" height="250px"></div>
-      <div><img class="foto4" src="../imagenes/fotosUnas/corazones.jpeg" alt=""  width="200px" height="250px"></div>
-      <div><img class="foto5" src="../imagenes/fotosUnas/esmaltadoPermanente.jpeg" alt="" width="200px" height="250px"></div>
-      <div><img class="foto6" src="../imagenes/fotosUnas/flor.jpeg" alt="" width="200px" height="250px"></div>
-      <div><img class="foto7" src="../imagenes/fotosUnas/marmol.jpeg" alt="" width="200px" height="250px"></div>
-      <div><img class="foto8" src="../imagenes/fotosUnas/nailArt.jpeg" alt=""  width="200px" height="250px"></div>
-      <div><img class="foto9" src="../imagenes/fotosUnas/negrasLija.jpeg" alt=""  width="200px" height="250px"></div>
-      <div><img class="foto10" src="../imagenes/fotosUnas/ojoDeGato.jpeg" alt="" width="200px" height="250px"></div>
-      <div><img class="foto11" src="../imagenes/fotosUnas/negrasSinCosito.jpeg" alt="" width="200px" height="250px"></div>
-      <div><img class="foto12" src="../imagenes/fotosUnas/puroHueso.jpeg" alt=""  width="200px" height="250px"></div>
-      <div><img class="foto13" src="../imagenes/fotosUnas/pressOnjpeg.jpeg" alt="" width="200px" height="250px"></div>
-      <div><img class="foto14" src="../imagenes/fotosUnas/rojasLargas.jpeg" alt="" width="200px" height="250px"></div>
-      <div><img class="foto15" src="../imagenes/fotosUnas/cappingGel.jpeg" alt=""  width="200px" height="250px"></div>
-      <div><img class="foto16" src="../imagenes/fotosUnas/blancaLisas.jpeg" alt="" width="200px" height="250px"></div>
-    </section>
+    <h1>ALGUNOS DE NUESTROS TRABAJOS</h1>
+    <div class="gallery-container">
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/corazones.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/caricaturas.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/celestes.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/flor.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/marmol.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/negrasLija.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/ojoDeGato.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/puroHueso.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/pressOnjpeg.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/rojasLargas.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/cappingGel.jpeg" alt="">
+      </div>
+      <div class="gallery__item">
+        <img class="gallery__img" src="../imagenes/fotosUnas/blancaLisas.jpeg" alt="">
+      </div>
+    </div>
   </main>
   <footer>
     <div class="socials">
-      <img src="../imagenes/facebook.png" alt="facebook">
-      <img src="../imagenes/instagram.png" alt="instagram">
-      <img src="../imagenes/whatsapp.png" alt="whatsapp">
+      <div><a href="https://m.facebook.com/TinaNailsManicura/"><img src="../imagenes/facebookWhite.png" alt="facebook"></a></div>
+      <div><a href="https://www.instagram.com/tina.nails_/"><img src="../imagenes/instaBlanco.png" alt="instagram"></a></div>
+      <div><a href="https://api.whatsapp.com/send?phone=541132952703"><img src="../imagenes/wspBlanco.png" alt="whatsapp"></a></div>
     </div>
   </footer>
 </body>

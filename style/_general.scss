@@ -1,5 +1,4 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -9,8 +8,8 @@
     margin: 0px;
     background-color: $color;
     font-family: $fontFamily;
-    
-    .logo{
+
+    .logo {
         border-radius: 100%;
         margin: 10px 20px;
     }
@@ -19,7 +18,9 @@
         color: black;
         font-size: 20px;
     }
+
 }
+
 
 footer {
     display: flex;
@@ -31,8 +32,8 @@ footer {
     background-color: black;
     grid-area: footer;
 
-    div {
-        background-color: white;
+    .socials {
+        display: flex;
         gap: 50px;
     }
 }
@@ -49,12 +50,14 @@ footer {
             "header"
             "main"
             "footer";
+
         .navbar {
             display: flex;
             justify-content: center;
         }
-        .text{
-                font-size: 10px;
+
+        .text {
+            font-size: 10px;
         }
-    }              
+    }
 }
