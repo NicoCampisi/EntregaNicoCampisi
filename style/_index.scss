@@ -1,0 +1,107 @@
+.padre {
+    display: grid;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+    main {
+        grid-area: main;
+        width: 100%;
+        .car-index {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .text {
+            display: flex;
+            width: 80%;
+            background-color: rgb(150, 192, 183);
+            border: 2px solid rgb(150, 192, 183);
+            border-radius: 20px;
+            margin: 70px auto;
+            padding: 15px;
+            box-shadow: 10px 10px 20px black;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .contenedor{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin:15px auto;
+            .card{
+                width: 330px;
+                height: 430px;
+                border: none;
+                margin: 20px 50px;
+                text-align: center;
+                img{
+                    width: 320px;
+                    height: 220px;
+                    border-radius: 20px;
+                }
+                h4{
+                    font-size: 45px;
+                    font-family: $fontFamily;
+                    margin: 35px auto;
+                    
+                }
+                a{
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: #3498db;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 426px) {
+    .padre {
+        display: grid;
+        grid-template-rows: auto 3fr auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        
+        main {
+            .text {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px){
+    .padre {
+        main {
+            .contenedor{
+                .card{
+                    margin: auto;
+                    align-items: center;
+                }
+                h4{
+                    font-size: 25px;
+                }
+                p{
+                    padding: 0 1rem;
+                    font-size: 16px;
+                }
+                a{
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: #3498db;
+                }
+            }
+        }
+    }
+
+}
