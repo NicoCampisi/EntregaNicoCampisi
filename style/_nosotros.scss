@@ -8,10 +8,15 @@
     background-color: $color;
 
     .mainNosotros {
-        h2 {
+        h2{
             @include flex(flex, center, center);
             margin: 80px auto 20px auto;
             padding: 15px;
+            font-size: 30px;
+            font-family: $fontFamily;
+        }
+        h3{
+            @include flex(flex, center, center);
             font-size: 30px;
             font-family: $fontFamily;
         }
